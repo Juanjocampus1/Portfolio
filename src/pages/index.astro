@@ -1,0 +1,73 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Badge from '../components/Badge.astro';
+import Linkedin from '../icons/Linkedin.astro';
+import SocialPil from '../components/SocialPil.astro';
+import Github from '../icons/github.astro';
+import Mail from '../icons/Mail.astro';
+import Experience from '../components/Experience.astro';
+import SectionContainer from '../components/SectionContainer.astro';
+import Brifecase from '../icons/brifecase.astro';
+---
+
+<Layout
+	title="Portfolio de Juanjo Desarrollador y Programador"
+	description="contrata a juanjo para tus proyectos de desarrollo grafico, back y diseño grafico y 3D"
+>
+	<main>
+		<SectionContainer class="py-44">
+			<img
+				class="rounded-full w-12 h-12" 
+				alt="juanjo foto" 
+				src="/public/juanjo.jpg"
+			/>
+			<h1 class="text-white text-5xl font-bold flex flex-row gap-x-4 pb-10">
+				Hey soy Juanjo
+				<a 
+				href="https://www.linkedin.com/in/juan-jos%C3%A9-acebedo-lara-2658332b0?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+				target="_blank"
+				rel="noopener"
+				class="flex justify-center items-center">
+					<Badge>
+						Disponible para trabajar
+					</Badge>
+				</a>
+			</h1>
+			
+			<h2 class="text-2xl text-wrap">
+				<span class="text-yellow-100/90">
+					Desarrollador Grafico, Back-end y Diseñador 3D.
+				</span>
+				<span class="text-red-200/90">
+					De Madrid España.
+				</span>
+				<span class="opacity-80">
+					Especializado en crear aplicaciones, juegos y soluciones unicas.
+				</span>
+			</h2>
+
+				<nav class="flex gap-x-2">
+					<SocialPil href="https://www.linkedin.com/in/juan-jos%C3%A9-acebedo-lara-2658332b0?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+						<Linkedin class="w-6 h-6"/>
+						LinkedIn
+					</SocialPil>
+					<SocialPil href="https://github.com/Juanjocampus1">
+						<Github class="w-6 h-6"/>
+						GitHub
+					</SocialPil>
+					<SocialPil href="https://github.com/Juanjocampus1">
+						<Mail class="w-6 h-6"/>
+						jjacebedol@gmail.com
+					</SocialPil>
+				<nav/>
+		</SectionContainer>
+
+		<SectionContainer id="Experience" class="py-24">
+			<h2 class="text-2xl font-semibold mb-6 flex gap-x-3 items-center">
+				<Brifecase class="size-7"/>
+				Experiencia laboral
+			</h2>
+			<Experience/>
+		</SectionContainer>
+	</main>
+</Layout>
